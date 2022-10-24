@@ -1,7 +1,11 @@
 package main
 
 func main() {
-	baseUrl := "https://go.dev/"
+	baseUrl := "https://go.dev"
 
-	Scrape(baseUrl)
+	// Scrape(baseUrl)
+
+	NewCrawler(baseUrl)
+
+	select {}
 }
