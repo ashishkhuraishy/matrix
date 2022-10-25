@@ -44,6 +44,7 @@ func (c *Crawler) Crawl() {
 		go func(url string) {
 			urls := requestData(url)
 			log.Printf("found %d links from %v\n", len(urls), url)
+			c.visit(url)
 
 			c.parser <- urls
 		}(url)

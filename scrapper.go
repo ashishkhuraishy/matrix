@@ -12,8 +12,8 @@ import (
 )
 
 func Scrape(baseUrl string) {
-	urls := requestData(baseUrl)
-	fmt.Println(urls)
+	// urls := requestData(baseUrl)
+	// fmt.Println(urls)
 }
 
 func requestData(baseUrl string) []string {
